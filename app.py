@@ -1,3 +1,17 @@
+'''
+Created on 
+    March 21, 2022
+
+Course work: 
+    Article Editor
+
+@author: Sivaraam , Elakia
+
+Source:
+    
+'''
+
+# Import necessary modules
 from flask import Flask
 from routes.post import post_pages
 from sqlmodel import SQLModel, create_engine
@@ -15,3 +29,10 @@ def create_app():
     app.register_blueprint(post_pages)
 
     return app
+
+def startpy():
+    create_app()
+    pass
+
+if __name__ == '__main__':
+    startpy()
